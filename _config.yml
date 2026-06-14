@@ -10,8 +10,8 @@ email: hello@xariv.com
 # ── URLs ─────────────────────────────────────────────────────────
 # If repo is named "xariv-blog" -> baseurl: "/xariv-blog"
 # If repo is named "<username>.github.io" (user site) -> baseurl: ""
-url: "https://YOUR_USERNAME.github.io"
-baseurl: "/xariv-blog"
+url: "https://manojkumar-github.github.io"
+baseurl: ""
 
 # ── Build ────────────────────────────────────────────────────────
 markdown: kramdown
