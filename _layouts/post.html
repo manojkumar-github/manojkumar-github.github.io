@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<article class="post">
+  <div class="wrap post-head">
+    <a class="back-link" href="{{ '/' | relative_url }}">← All articles</a>
+
+    {% if page.category %}
+    <span class="eyebrow">{{ page.category }}</span>
+    {% endif %}
+
+    <h1 class="post-title">{{ page.title }}</h1>
+
+    {% if page.excerpt_override %}
+    <p class="post-lede">{{ page.excerpt_override }}</p>
+    {% endif %}
+
+    <div class="post-meta">
+      {% if page.author %}<span class="meta-author">{{ page.author }}</span>{% endif %}
+      <span class="meta-dot">·</span>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+      <span class="meta-dot">·</span>
+      <span>{{ content | number_of_words | divided_by: 200 | plus: 1 }} min read</span>
+    </div>
+  </div>
+
+  {% if page.image %}
+  <div class="wrap">
+    <img class="post-hero" src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+  </div>
+  {% endif %}
+
+  <div class="wrap post-body">
+    {{ content }}
+  </div>
+
+  <div class="wrap post-foot">
+    <a class="back-link" href="{{ '/' | relative_url }}">← Back to all articles</a>
+  </div>
+</article>

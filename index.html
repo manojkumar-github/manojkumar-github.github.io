@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<section class="hero">
+  <div class="wrap">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.tagline }}</p>
+  </div>
+</section>
+
+<section class="wrap feed">
+
+  {%- comment -%} Build the unique set of categories used across posts {%- endcomment -%}
+  {% assign cats = site.posts | map: "category" | uniq | sort %}
+
+  <div class="chips" id="chips">
+    <button class="chip is-active" data-cat="all">All</button>
+    {% for c in cats %}
+      {% if c %}<button class="chip" data-cat="{{ c | slugify }}">{{ c }}</button>{% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="cards" id="cards">
+    {% for post in site.posts %}
+    <a class="card" href="{{ post.url | relative_url }}" data-cat="{{ post.category | slugify }}">
+      {% if post.image %}
+      <div class="card-media" style="background-image:url('{{ post.image | relative_url }}')"></div>
+      {% else %}
+      <div class="card-media card-media--blank"></div>
+      {% endif %}
+      <div class="card-body">
+        {% if post.category %}<span class="card-cat">{{ post.category }}</span>{% endif %}
+        <h2 class="card-title">{{ post.title }}</h2>
+        <p class="card-excerpt">{{ post.excerpt | strip_html | truncate: 140 }}</p>
+        <div class="card-meta">
+          {% if post.author %}<span>{{ post.author }}</span><span class="meta-dot">·</span>{% endif %}
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<script>
+  (function () {
+    var chips = document.querySelectorAll('#chips .chip');
+    var cards = document.querySelectorAll('#cards .card');
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        chips.forEach(function (c) { c.classList.remove('is-active'); });
+        chip.classList.add('is-active');
+        var cat = chip.getAttribute('data-cat');
+        cards.forEach(function (card) {
+          var show = cat === 'all' || card.getAttribute('data-cat') === cat;
+          card.style.display = show ? '' : 'none';
+        });
+      });
+    });
+  })();
+</script>
