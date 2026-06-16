@@ -357,13 +357,6 @@ to you.**
 5. **Future AI infrastructure must be communication-aware by design** — topology,
    placement, and collectives co-designed with the model.
 
-## 16. Open questions
-
-- Can expert routing be made **topology-aware** at inference time without hurting quality?
-- Can experts **self-balance** their load online as traffic drifts?
-- Should expert **placement be dynamic**, migrating hot experts toward demand?
-- What is the right **benchmark for communication efficiency** — a standardized
-  "all-to-all per token at the tail" metric the field could compare against?
 
 ## References
 
