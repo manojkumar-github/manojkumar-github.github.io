@@ -1,7 +1,7 @@
 ---
 title: "Cutting P99 Latency by 60% on Our Search Service"
 date: 2026-06-10
-author: Priya Nair
+author: Manoj Kumar
 category: "Performance"
 excerpt_override: "How we traced a tail-latency problem to connection pooling and fixed it without adding a single server."
 # image: /assets/img/search-latency.png   # optional — uncomment to add a hero

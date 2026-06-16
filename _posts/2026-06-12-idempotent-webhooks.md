@@ -1,7 +1,7 @@
 ---
 title: "Designing an Idempotent Webhook Pipeline"
 date: 2026-06-12
-author: Marcus Lee
+author: Manoj Kumar
 category: "Architecture"
 excerpt_override: "Webhooks retry. Your handlers must assume every event arrives more than once — here's the pattern we standardized on."
 # image: /assets/img/webhooks.png
