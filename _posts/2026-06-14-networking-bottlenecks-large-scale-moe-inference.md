@@ -1,7 +1,7 @@
 ---
 title: "Networking Bottlenecks in Large-Scale Mixture-of-Experts (MoE) Inference"
 date: 2026-06-14
-author: Xariv Infrastructure
+author: Manoj Kumar
 category: "AI Infrastructure"
 description: "An architecture case study on why scaling GPUs stopped improving throughput in a hypothetical 235B-parameter MoE answer-generation platform — and how networking, not compute, became the limiting factor on NVIDIA H100 fleets."
 excerpt_override: "Why adding GPUs stopped improving throughput in a hypothetical 235B-parameter MoE answer-generation platform — and how the bottleneck turned out to live in the network, not the GPU."
