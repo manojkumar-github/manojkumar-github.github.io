@@ -40,6 +40,18 @@ print("code blocks are styled")
 **Categories** are free text. Reuse the same spelling (e.g. always `"Performance"`)
 and a filter chip appears automatically. Add images to `assets/img/`.
 
+### XARIV Infrastructure Copilot
+
+The interactive copilot lives at `/copilot/` and runs entirely in the browser (no
+backend required on GitHub Pages). To rebuild after changing `xariv-platform/frontend`:
+
+```bash
+cd ../xariv-platform/frontend
+npm run deploy:pages
+```
+
+Then commit and push the updated `copilot/` folder in this repo.
+
 ---
 
 ## 🔧 First-time configuration
