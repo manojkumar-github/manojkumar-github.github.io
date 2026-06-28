@@ -9,6 +9,28 @@ layout: default
   </div>
 </section>
 
+<section class="wrap tools">
+  <h2 class="tools-heading">Tools</h2>
+  <div class="cards">
+    <a class="card" href="{{ '/lens/' | relative_url }}">
+      <div class="card-media card-media--lens"></div>
+      <div class="card-body">
+        <span class="card-cat">GPU sizing</span>
+        <h2 class="card-title">Xariv Lens</h2>
+        <p class="card-excerpt">Predict cost, performance, and bottlenecks before you deploy — sizing, economics, and the binding constraint for any inference workload.</p>
+      </div>
+    </a>
+    <a class="card" href="{{ '/pulse/' | relative_url }}">
+      <div class="card-media card-media--pulse"></div>
+      <div class="card-body">
+        <span class="card-cat">Latency profiling</span>
+        <h2 class="card-title">Xariv Pulse</h2>
+        <p class="card-excerpt">Replay a dataset on target hardware and summarize TTFT, ITL, TPOT, end-to-end latency, throughput, and GPU telemetry.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
 <section class="wrap feed">
 
   {%- comment -%} Build the unique set of categories used across posts {%- endcomment -%}

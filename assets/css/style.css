@@ -73,6 +73,14 @@ img{max-width:100%;display:block}
 }
 .hero p{font-size:clamp(16px,2.2vw,20px);color:var(--ink-soft);max-width:620px;margin:0}
 
+/* ---------- Tools (home) ---------- */
+.tools{padding:48px 24px 0}
+.tools-heading{
+  font-family:"Space Grotesk",sans-serif;font-size:28px;letter-spacing:-.02em;margin:0 0 28px;
+}
+.card-media--lens{background:linear-gradient(135deg,#eef0fb 0%,#ddd6fe 100%)}
+.card-media--pulse{background:linear-gradient(135deg,#e6f7fb 0%,#cffafe 100%)}
+
 /* ---------- Feed / chips ---------- */
 .feed{padding:40px 24px 80px}
 .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}

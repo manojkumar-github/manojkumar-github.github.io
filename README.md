@@ -40,17 +40,17 @@ print("code blocks are styled")
 **Categories** are free text. Reuse the same spelling (e.g. always `"Performance"`)
 and a filter chip appears automatically. Add images to `assets/img/`.
 
-### XARIV Infrastructure Copilot
+### XARIV Lens & Pulse
 
-The interactive copilot lives at `/copilot/` and runs entirely in the browser (no
-backend required on GitHub Pages). To rebuild after changing `xariv-platform/frontend`:
+Interactive tools live at `/lens/` and `/pulse/` — both run entirely in the browser.
 
 ```bash
 cd ../xariv-platform/frontend
-npm run deploy:pages
+npm run deploy:lens
+npm run deploy:pulse
 ```
 
-Then commit and push the updated `copilot/` folder in this repo.
+Then commit and push the updated `lens/` and `pulse/` folders in this repo.
 
 ---
 
