@@ -40,17 +40,9 @@ print("code blocks are styled")
 **Categories** are free text. Reuse the same spelling (e.g. always `"Performance"`)
 and a filter chip appears automatically. Add images to `assets/img/`.
 
-### XARIV Lens & Pulse
+The interactive tools live at `/atlas/` and `/pulse/` on [xariv-website.vercel.app](https://xariv-website.vercel.app/).
 
-Interactive tools live at `/lens/` and `/pulse/` — both run entirely in the browser.
-
-```bash
-cd ../xariv-platform/frontend
-npm run deploy:lens
-npm run deploy:pulse
-```
-
-Then commit and push the updated `lens/` and `pulse/` folders in this repo.
+This GitHub Pages site now redirects to the Vercel deployment. Push `.nojekyll` and the redirect HTML files to activate.
 
 ---
 
