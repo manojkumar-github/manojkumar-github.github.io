@@ -40,7 +40,7 @@ print("code blocks are styled")
 **Categories** are free text. Reuse the same spelling (e.g. always `"Performance"`)
 and a filter chip appears automatically. Add images to `assets/img/`.
 
-The interactive tools live at `/atlas/` and `/pulse/` on [xariv-website.vercel.app](https://xariv-website.vercel.app/).
+The interactive tools live at [xarivlabs.com/lens](https://xarivlabs.com/lens) and [xarivlabs.com/pulse](https://xarivlabs.com/pulse).
 
 This GitHub Pages site now redirects to the Vercel deployment. Push `.nojekyll` and the redirect HTML files to activate.
 
